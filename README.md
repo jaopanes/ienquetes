@@ -1,6 +1,6 @@
-# iEnquetes Search
+# iEnquetes
 
-Aplicação para administração de enquetes
+Aplicação para administração de enquetes utilizando <b>Laravel 8</b> para desenvolvimento do back-end e <b>Next.js</b> para o front-end.
 
 ## Features
 
@@ -13,6 +13,3 @@ Aplicação para administração de enquetes
 - [ ] Edição de enquetes
 - [ ] Sistema de votação realtime
 
-## API 
-
-Para a desenvolvimento do back-end foi utilizado <b>Laravel 8</b> e seus devidos recursos para criação de API.

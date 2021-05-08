@@ -1,0 +1,35 @@
+:root {
+    --blue: #199DC7;
+    --white: #FFFFFF;
+    --dark-blue: #1E4B59;
+    --pink: #FE4F84;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F0FBFF;
+}
+
+a,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+input,
+button {
+    border: 0;
+    padding: 0;
+    outline: none;
+}

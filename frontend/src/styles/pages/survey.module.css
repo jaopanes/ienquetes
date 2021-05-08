@@ -1,0 +1,155 @@
+.readSurvey {
+    width: 33%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -120px;
+}
+
+.survey {
+    width: 100%;
+    background: var(--white);
+    box-shadow: 0px 0px 30px rgba(30, 75, 89, 0.08);
+    border-radius: 15px;
+    padding: 16px;
+    float: left;
+}
+
+.survey .titleRead {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-bottom: 24px;
+}
+
+.survey .inputGroup {
+    width: 100%;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.survey .inputGroup:last-child {
+    margin-bottom: 0;
+}
+
+.survey .inputGroup input {
+    display: none;
+}
+
+.survey .inputGroup label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    box-shadow: 0px 0px 30px rgba(30, 75, 89, 0.2);
+    border-radius: 15px;
+    background-color: var(--white);
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.survey .inputGroup .titleOption,
+.survey .inputGroup .qntOption {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+
+.survey .inputGroup .qntOption {
+    font-size: 1.25rem;
+    flex: 1;
+    text-align: right;
+    padding-right: 4px;
+}
+
+.survey .inputGroup label::before {
+    content: '';
+    background: var(--blue);
+    opacity: 0.2;
+    border-radius: 50px;
+    width: 36px;
+    height: 36px;
+    margin-right: 16px;
+    transition: opacity 0.2s;
+}
+
+.survey .inputGroup [id^=option]:checked~label::before {
+    opacity: 1;
+}
+
+.survey .btnSubmit {
+    width: 100%;
+    height: 50px;
+    background: var(--blue);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.survey button.btnSubmit:hover {
+    opacity: 0.8;
+}
+
+.survey button.btnSubmit:active {
+    opacity: 0.6;
+}
+
+.survey .btnNot {
+    opacity: 0.7;
+    cursor: unset;
+}
+
+.survey .btnEnd {
+    background-color: var(--pink);
+    opacity: 0.7;
+    cursor: unset;
+}
+
+.dateSurvey {
+    width: 100%;
+    height: 52px;
+    background-color: var(--pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1rem;
+    margin-top: 24px;
+    border-radius: 15px;
+    float: left;
+}
+
+.dateSurvey strong {
+    font-weight: 600;
+    margin: 0 4px;
+}
+
+.readSurvey a {
+    height: 40px;
+    background-color: var(--white);
+    font-size: 1rem;
+    border-radius: 15px;
+    color: var(--blue);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    float: right;
+    padding: 0 24px;
+    transition: opacity 0.2s;
+    margin-left: 8px;
+}
+
+.readSurvey a:hover {
+    opacity: 0.8;
+}
+
+.readSurvey a:active {
+    opacity: 0.6;
+}

@@ -1,0 +1,182 @@
+.sectionNew {
+    width: 50%;
+    background-color: var(--white);
+    box-shadow: 0px 0px 30px rgba(30, 75, 89, 0.08);
+    border-radius: 15px;
+    padding: 16px;
+    margin: -80px auto 120px auto;
+    position: relative;
+}
+
+.sectionNew .titleSection {
+    font-size: 1.25rem;
+    color: var(--blue);
+    font-weight: 600;
+    margin: 12px 0;
+}
+
+.sectionNew .titleSection:first-child {
+    margin: 0 0 8px 0;
+}
+
+.inputGroup {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.inputGroup:last-child {
+    margin-bottom: 0;
+}
+
+.inputGroup label {
+    font-size: 0.75rem;
+    color: var(--dark-blue);
+    opacity: 0.8;
+}
+
+.inputGroup input {
+    width: 100%;
+    margin-top: 8px;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px rgba(30, 75, 89, 0.15);
+    padding: 0 16px;
+    color: var(--dark-blue);
+}
+
+.btnSubmit {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-top: 16px;
+    border-radius: 15px;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--pink);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btnSubmit:hover {
+    opacity: 0.8;
+}
+
+.btnSubmit:active {
+    opacity: 0.6;
+}
+
+.basedOptions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.basedOptions .qntOptions {
+    flex: 1;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px rgba(30, 75, 89, 0.15);
+    padding: 0 16px;
+    color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.basedOptions .btnAdd,
+.basedOptions .btnReduce {
+    min-width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.basedOptions .btnAdd:hover,
+.basedOptions .btnReduce:hover {
+    opacity: 0.8;
+}
+
+.basedOptions .btnAdd:active,
+.basedOptions .btnReduce:active {
+    opacity: 0.6;
+}
+
+.basedOptions .btnAdd {
+    background-color: var(--blue);
+}
+
+.basedOptions .btnReduce {
+    background-color: var(--pink);
+}
+
+.basedOptions .btnAdd::before,
+.basedOptions .btnReduce::before {
+    content: '+';
+    font-weight: 800;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.basedOptions .btnAdd::before {
+    content: '+';
+}
+
+.basedOptions .btnReduce::before {
+    content: '-';
+}
+
+.message {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 15px;
+    margin-bottom: 8px;
+}
+
+.message[data-type="success"] {
+    background-color: var(--blue);
+}
+
+.message[data-type="error"] {
+    background-color: var(--pink);
+}
+
+.sectionNew>a {
+    height: 40px;
+    background-color: var(--white);
+    font-size: 1rem;
+    border-radius: 15px;
+    color: var(--blue);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    float: right;
+    padding: 0 24px;
+    transition: opacity 0.2s;
+    position: absolute;
+    right: 0;
+    top: -66px;
+}
+
+.sectionNew>a:hover {
+    opacity: 0.8;
+}
+
+.sectionNew>a:active {
+    opacity: 0.6;
+}
